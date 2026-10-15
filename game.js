@@ -29,9 +29,8 @@ function animate()
 
 if (ball.x + ball.radius <= canvas.width)
     {
-        ball.x = canvas.width - ball.radius;
-        ball.xSpeed = -ball.xSpeed * 1.01;
-        ball.color = "blue";
+        
+
     }
 
     if (ball.x + ball.radius >= canvas.width)
