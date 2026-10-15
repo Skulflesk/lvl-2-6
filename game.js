@@ -27,9 +27,12 @@ function animate()
     ball.x = ball.x + ball.xSpeed;
     ball.y = ball.y + ball.ySpeed;
 
-if (ball.x + ball.radius <= canvas.width)
+if (ball.x + ball.radius < 0)
     {
-        
+     ball.x = 500;
+    ball.y = 250;
+    ball.xSpeed = 5;
+    ball.ySpeed = 5;
 
     }
 
