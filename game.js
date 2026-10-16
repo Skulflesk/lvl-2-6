@@ -8,6 +8,7 @@ player1.y = 200;
 player1.width = 30;
 player1.height = 100;
 
+
 var ball = new GameObject();
 ball.x = 500;
 ball.y = 250;
@@ -15,6 +16,8 @@ ball.radius = 30;
 ball.color = "black";
 ball.xSpeed = 5;
 ball.ySpeed = 5;
+ball.vy = 0;
+ball.vx = -0;
 
 function animate()
 {
@@ -64,8 +67,16 @@ if (ball.x + ball.radius < 0)
     {
         ball.x = player1.x + player1.width + ball.radius;
         ball.xSpeed = -ball.xSpeed;
-    }
+
+
+     if(ball.y < paddle.y - )
+     {
+       ball.vx = //positive speed;
+       ball.vy = //negative;
+     }
 }
+    }
+
 
 document.addEventListener("keydown", function(event)
 {
